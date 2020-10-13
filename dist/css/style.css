@@ -1,0 +1,259 @@
+body {
+  background-color: black;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 1500px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+}
+
+.death_star_img {
+  width: 100%;
+  height: 100%;
+}
+
+.bounty_text {
+  width: 65vw;
+  margin: 10vh auto;
+  min-height: 100px;
+}
+
+.bounty_title_img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn_container {
+  width: 70vw;
+  height: 6.5vh;
+  margin: 0 auto;
+}
+
+.arrow_container_left {
+  float: left;
+}
+
+.arrow_img_left {
+}
+
+.arrow_container_right {
+  float: right;
+  cursor: pointer;
+}
+
+.arrow_img_right {
+  transform: rotate(180deg);
+}
+
+.profile_container {
+  width: 70vw;
+  height: 250px;
+  margin: 0 auto;
+  border: 10px solid red;
+  border-radius: 25px;
+  min-height: 380px;
+}
+
+.bounty_card_space_img {
+  position: absolute;
+  width: 70vw;
+  height: 250px;
+  z-index: -5;
+  min-height: 380px;
+}
+
+.bounty_card {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.bounty_card_tatooine_img {
+  float: right;
+  z-index: -5;
+  width: 500px;
+  min-height: 300px;
+}
+
+.profile_img {
+  width: 300px;
+  height: 93%;
+  margin-top: 2vh;
+  margin-left: 13vw;
+}
+
+.info_name_container {
+  position: absolute;
+  font-size: 60px;
+  color: white;
+  left: 50vw;
+  top:  35vh;
+  min-width: 400px;
+
+  white-space: nowrap;
+}
+
+.info_name_container p {
+  margin: 10px 0 0;
+}
+
+.info_underline {
+  background-color: grey;
+  margin-top: 0;
+  height: 10px;
+}
+
+.info_profile_container {
+  font-size: 30px;
+  list-style-type: none;
+}
+
+.info_profile_container ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.info_profile_container p {
+  margin: 10px auto;
+}
+
+.info_profile_headings {
+  float: left;
+}
+
+.info_profile_info {
+  float: right;
+}
+
+.bounty_btn_accept_container {
+  width: 40vw;
+  height: 100px;
+  min-width: 650px;
+  margin: 10px auto;
+  border-radius: 25px;
+  background-color: black;
+  white-space: nowrap;
+}
+
+.btn_accept {
+  position: absolute;
+  font-size: 50px;
+  font-family: starwars;
+  color: white;
+  height: 10%;
+  width: 40%;
+  text-align: center;
+  padding-top: 0.5%;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: starwars;
+  src: url(Starjedi.ttf);
+}
+
+.no_contract {
+  position: absolute;
+  font-size: 50px;
+  font-family: starwars;
+  color: white;
+  height: 15vh;
+  width: 50vw;
+  min-width: 700px;
+  max-width: 1000px;
+  visibility: hidden;
+  margin-top: 10vh;
+}
+
+.greenHover:hover {
+  background-color: green;
+}
+
+.redHover:hover {
+  background-color: red;
+}
+
+.red_border {
+  border: 10px solid red;
+}
+
+.green_border {
+  border: 10px solid green;
+}
+
+.loader {
+  position: absolute;
+  z-index: 5;
+  border: 16px solid grey;
+  border-radius: 50%;
+  border-top: 16px solid white;
+  width: 250px;
+  height: 250px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  left: 42vw;
+  top: 42vh;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 1500px) {
+  .bounty_text,
+  .profile_container,
+  .profile_info_url,
+  .bounty_card_space_img,
+  .bounty_card {
+    width: 1000px;
+  }
+
+  .profile_img {
+    margin-left: 100px;
+  }
+
+  .info_name_container {
+    left: 800px;
+  }
+
+  .btn_accept {
+    left: 460px;
+  }
+
+  .no_contract {
+    margin-left: 450px;
+  }
+
+  .loader {
+    left: 650px;
+  }
+}
+
+@media (max-height: 850px) {
+  .profile_img {
+    max-height: 363px;
+  }
+
+  .info_name_container {
+    top: 275px;
+  }
+}
