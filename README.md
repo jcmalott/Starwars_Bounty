@@ -12,5 +12,10 @@ Allows the user to accept bounty contracts and stores that information to local 
 - webpack
 - axios
 
-# Webpage 
+# Home Page
 ![alt text](https://github.com/jcmalott/Starwars_Bounty/blob/main/pictures/Home_Page.PNG)
+
+# Concept Art
+![alt text](https://github.com/jcmalott/Starwars_Bounty/blob/main/pictures/Concept_MainPage.png)
+
+![alt text](https://github.com/jcmalott/Starwars_Bounty/blob/main/pictures/Concept_Bounty.png)
